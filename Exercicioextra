@@ -1,0 +1,40 @@
+WordPress 4.8
+Agora é possível acrescentar imagem, áudio e vídeo para uma widget sem precisar saber qualquer linha de código
+Para fazer isto você só precisa selecionar o arquivo desejado na biblioteca de mídias dentro da widget e ela vai aparecer automaticamente em seu site.
+A seção WordPress News no painel de controle mostra os eventos locais do WordPress. Agora você pode facilmente descobrir onde estão sendo feitos os WordCamps e meetups mais perto de você.
+
+
+Apache HTTP Server 2.4
+
+fcgistarter
+New FastCGI daemon starter utility
+htcacheclean
+Current cached URLs can now be listed, with optional metadata included.
+Allow explicit deletion of individual cached URLs from the cache.
+File sizes can now be rounded up to the given block size, making the size limits map more closely to the real size on disk.
+Cache size can now be limited by the number of inodes, instead of or in addition to being limited by the size of the files on disk.
+rotatelogs
+May now create a link to the current log file.
+May now invoke a custom post-rotate script.
+htpasswd, htdbm
+Support for the bcrypt algorithm (available in 2.4.4 and later).
+
+
+Changes with nginx 1.13.4                                        08 Aug 2017
+
+    *) Feature: the ngx_http_mirror_module.
+
+    *) Bugfix: client connections might be dropped during configuration
+       testing when using the "reuseport" parameter of the "listen"
+       directive on Linux.
+
+    *) Bugfix: request body might not be available in subrequests if it was
+       saved to a file and proxying was used.
+
+    *) Bugfix: cleaning cache based on the "max_size" parameter did not work
+       on Windows.
+
+    *) Bugfix: any shared memory allocation required 4096 bytes on Windows.
+
+    *) Bugfix: nginx worker might be terminated abnormally when using the
+       "zone" directive inside the "upstream" block on Windows
